@@ -23,11 +23,11 @@ namespace Problema_1
 			for(int i = 1; i <= n; i++)
 				a[i, 1] = a[i, m] = val;
 
-			for (int i = 1; i <= m; i++)
+			for(int i = 1; i <= m; i++)
 				a[1, i] = a[n, i] = val;
 
-			for (int i = 1; i <= n; i++)
-            {
+			for(int i = 1; i <= n; i++)
+            		{
 				for (int j = 1; j <= m; j++)
 					Console.Write($"{a[i, j]} ");
 				Console.WriteLine();
