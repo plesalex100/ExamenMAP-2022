@@ -10,17 +10,13 @@ namespace Problema_10
         {
 
             int n, m, k = 0;
-            if(!int.TryParse(Console.ReadLine(), out n))
-            {
-                Console.WriteLine("Nu ati introdus un numar");
-                return;
-            }
-            if(!int.TryParse(Console.ReadLine(), out m))
-            {
-                Console.WriteLine("Nu ati introdus un numar");
-                return;
-            }
-
+            
+            string line = Console.ReadLine();
+			char[] seps = {' ', '.', ',', '?'};
+			string[] input = line.Split(seps, StringSplitOptions.RemoveEmptyEntries);
+    
+            n = int.Parse(input[0]);
+            m = int.Parse(input[1]);
 
             if (m * 2 >= n)
                 Console.Write("0 ");
