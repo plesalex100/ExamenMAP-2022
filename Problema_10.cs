@@ -12,8 +12,8 @@ namespace Problema_10
             int n, m, k = 0;
             
             string line = Console.ReadLine();
-			char[] seps = {' ', '.', ',', '?'};
-			string[] input = line.Split(seps, StringSplitOptions.RemoveEmptyEntries);
+	    char[] seps = {' ', '.', ',', '?'};
+	    string[] input = line.Split(seps, StringSplitOptions.RemoveEmptyEntries);
     
             n = int.Parse(input[0]);
             m = int.Parse(input[1]);
